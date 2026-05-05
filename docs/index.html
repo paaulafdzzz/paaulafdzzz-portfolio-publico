@@ -3,13 +3,165 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfolio ASIR y Ciberseguridad</title>
-</head>
-<body>
-  <h1>Portfolio de Prácticas de ASIR y Ciberseguridad</h1>
-  <p>Bienvenido/a a mi portfolio público de prácticas.</p>
 
-  <h2>Prácticas</h2>
-  <ul>
-  </ul>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #0f172a; /* azul oscuro */
+      color: #e2e8f0; /* gris claro */
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      color: #38bdf8; /* azul claro */
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #94a3b8;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      border-left: 5px solid #38bdf8;
+      padding-left: 10px;
+    }
+
+    /* Grid de proyectos */
+    .proyectos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    /* Tarjetas */
+    .card {
+      background-color: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(56,189,248,0.3);
+    }
+
+    .card h3 {
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+      color: #cbd5f5;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #0f172a;
+      background-color: #38bdf8;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+
+    .card a:hover {
+      background-color: #0ea5e9;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.8rem;
+      color: #64748b;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Portfolio de ASIR y Ciberseguridad</h1>
+    <p>Proyectos prácticos en redes, sistemas y seguridad</p>
+  </header>
+
+  <section>
+    <h2>Proyectos</h2>
+
+    <div class="proyectos">
+
+      <div class="card">
+        <h3>Firewall</h3>
+        <p>Configuración de reglas de filtrado y seguridad perimetral.</p>
+        <a href="docs/FIREWALL.pdf" target="_blank">Ver proyecto</a>
+      </div>
+
+      <div class="card">
+        <h3>DHCP</h3>
+        <p>Implementación y configuración de servicio DHCP en red.</p>
+        <a href="docs/DHCP%20VERSION2.pdf" target="_blank">Ver proyecto</a>
+      </div>
+
+      <div class="card">
+        <h3>IDS/IPS Suricata</h3>
+        <p>Despliegue de sistema de detección y prevención de intrusos.</p>
+        <a href="docs/Configuracion%20IDS-IPS%20Suricata.pdf" target="_blank">Ver proyecto</a>
+      </div>
+
+      <div class="card">
+        <h3>SOC con ELK</h3>
+        <p>Creación de un entorno SOC con ELK, Logstash y Suricata.</p>
+        <a href="docs/Creaci%C3%B3n%20de%20un%20SOC%20con%20ELK,%20Logstash,%20Suricata.pdf" target="_blank">Ver proyecto</a>
+      </div>
+
+      <div class="card">
+        <h3>Active Directory + Debian</h3>
+        <p>Integración de sistemas Linux en dominio Windows.</p>
+        <a href="docs/A%C3%B1adir%20Debian%20a%20Active%20Directory.pdf" target="_blank">Ver proyecto</a>
+      </div>
+
+      <div class="card">
+        <h3>Servidor de Chat</h3>
+        <p>Desarrollo y configuración de servidor de comunicación.</p>
+        <a href="docs/serverchat.pdf" target="_blank">Ver proyecto</a>
+      </div>
+
+      <div class="card">
+        <h3>Gestión de Identidad</h3>
+        <p>Guía sobre control de accesos y gestión de identidades.</p>
+        <a href="docs/guia%20de%20gestion%20de%20la%20identidad.pdf" target="_blank">Ver proyecto</a>
+      </div>
+
+      <div class="card">
+        <h3>Proyecto Final</h3>
+        <p>Implementación completa de solución de ciberseguridad.</p>
+        <a href="docs/proxecto%20fin%20de%20ciclo%2024-25.pdf" target="_blank">Ver proyecto</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 - Portfolio ASIR | Ciberseguridad</p>
+  </footer>
+
 </body>
 </html>
